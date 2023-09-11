@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Score board</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="text"></h1>
+        <div class="scoreboard">
+           <div class="team-container">
+              <h2 class="text">HOME</h2>
+              <div class="one">
+                 <p class="pts" id="home-pts">0</p>
+                 <p class="pts-shadow">000</p>
+              </div>
+              <div class="two">
+                 <button class="usuall" id="one-pt" onclick="homeAddPoint()">+1</button>
+                 <button class="usuall" id="two-pts" onclick="homeAddTwoPoints()">+2</button>
+                 <button class="usuall" id="three-pts" onclick="homeAddThreePoints()">+3</button>
+              </div>
+           </div>
+           <div class="team-container">
+              <h2 class="text">GUEST</h2>
+              <div class="one">
+                 <p class="pts" id="guest-pts">0</p>
+                 <p class="pts-shadow">000</p>
+              </div>
+              <div class="two">
+                 <button class="usuall" id="one-pt" onclick="guestAddPoint()">+1</button>
+                 <button class="usuall" id="two-pts" onclick="guestAddTwoPoints()">+2</button>
+                 <button class="usuall" id="three-pts" onclick="guestAddThreePoints()">+3</button>
+              </div>
+           </div>
+        </div>
+      
+     </div>
+
+
+     <footer>
+        <button style="
+    cursor: pointer;
+    background-color: blue;
+    width: 180px;
+    height: 80px;
+    font-size: 35px;
+    border: 3px solid red;
+    border-radius: 10px;
+    color: var(--text-color2);
+    background-color: transparent;
+    width: 180px; height: 80px
+    "
+             onclick="resetall()"> Reset</button>
+        <p class="footer">Made by <a href="https://github.com/HamidrezaRahimian">Hamidreza Rahimian</a></p>
+        <p class="footer">Website made as part of the JavaScript Course provided by <a href="https://scrimba.com/">Scrimba</a></p>
+     </footer>
+    <script src="script.js"></script>
+</body>
+</html>
